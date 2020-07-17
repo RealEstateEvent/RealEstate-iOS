@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+        <array key="NunitoSans-Light.ttf">
+            <string>NunitoSans-Light</string>
+        </array>
+        <array key="NunitoSans-SemiBold.ttf">
+            <string>NunitoSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventTCell" rowHeight="320" id="KGk-i7-Jjw" customClass="EventTCell" customModule="RealEstate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="330" height="320"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="330" height="320"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Mq-Zx-M72">
+                        <rect key="frame" x="16" y="0.0" width="298" height="310"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V05-zg-oYs">
+                                <rect key="frame" x="0.0" y="0.0" width="298" height="186"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="186" id="FPu-s2-D2M"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UPd-Vs-bRK">
+                                <rect key="frame" x="10" y="194" width="115" height="58"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Jun 4 - Aug 20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3u-iO-vzk">
+                                        <rect key="frame" x="0.0" y="0.0" width="115" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="NunitoSans-Light" family="Nunito Sans" pointSize="13"/>
+                                        <color key="textColor" red="0.73453861470000004" green="0.76028877500000003" blue="0.78686445949999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Auto Expo 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jac-67-S7b">
+                                        <rect key="frame" x="0.0" y="23.5" width="115" height="19"/>
+                                        <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Speakers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYt-Fx-MIO">
+                                        <rect key="frame" x="0.0" y="42.5" width="115" height="15.5"/>
+                                        <fontDescription key="fontDescription" name="NunitoSans-Light" family="Nunito Sans" pointSize="13"/>
+                                        <color key="textColor" name="customSubHeaderColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rma-7q-IiA">
+                                <rect key="frame" x="218" y="172" width="80" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="MMW-0w-QUQ"/>
+                                    <constraint firstAttribute="width" constant="80" id="byY-bn-jFI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NunitoSans-SemiBold" family="Nunito Sans" pointSize="14"/>
+                                <state key="normal" title="Free" backgroundImage="btn_iPhone">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="441-tU-BIa" customClass="OnlyHorizontalPictures" customModule="OnlyPictures">
+                                <rect key="frame" x="10" y="260" width="150" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="ZbG-jB-nve"/>
+                                    <constraint firstAttribute="height" constant="40" id="h71-PI-EJo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.15497779850000001" green="0.2457926869" blue="0.29908037189999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="441-tU-BIa" secondAttribute="bottom" constant="10" id="14J-BH-AeE"/>
+                            <constraint firstItem="V05-zg-oYs" firstAttribute="leading" secondItem="0Mq-Zx-M72" secondAttribute="leading" id="NPH-aq-V5d"/>
+                            <constraint firstItem="V05-zg-oYs" firstAttribute="top" secondItem="0Mq-Zx-M72" secondAttribute="top" id="Qdh-nY-xhB"/>
+                            <constraint firstAttribute="trailing" secondItem="rma-7q-IiA" secondAttribute="trailing" id="Zyz-2m-MFu"/>
+                            <constraint firstItem="441-tU-BIa" firstAttribute="leading" secondItem="UPd-Vs-bRK" secondAttribute="leading" id="cMb-fs-1xA"/>
+                            <constraint firstItem="441-tU-BIa" firstAttribute="top" secondItem="UPd-Vs-bRK" secondAttribute="bottom" constant="8" id="eqs-h5-J05"/>
+                            <constraint firstItem="rma-7q-IiA" firstAttribute="top" secondItem="V05-zg-oYs" secondAttribute="bottom" constant="-14" id="kaD-OW-the"/>
+                            <constraint firstItem="UPd-Vs-bRK" firstAttribute="top" secondItem="V05-zg-oYs" secondAttribute="bottom" constant="8" id="pgN-tM-B1f"/>
+                            <constraint firstAttribute="trailing" secondItem="V05-zg-oYs" secondAttribute="trailing" id="vEt-CR-sI1"/>
+                            <constraint firstItem="UPd-Vs-bRK" firstAttribute="leading" secondItem="0Mq-Zx-M72" secondAttribute="leading" constant="10" id="vj4-ZL-Hx4"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="shouldMaskToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="0Mq-Zx-M72" secondAttribute="bottom" constant="10" id="Y7m-9a-BpS"/>
+                    <constraint firstItem="0Mq-Zx-M72" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="ZNA-G7-iJ1"/>
+                    <constraint firstItem="0Mq-Zx-M72" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hRx-py-jDS"/>
+                    <constraint firstAttribute="trailing" secondItem="0Mq-Zx-M72" secondAttribute="trailing" constant="16" id="nik-jM-3FW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgView" destination="V05-zg-oYs" id="DPA-Ux-aOj"/>
+                <outlet property="imgViewsSpeakers" destination="441-tU-BIa" id="YiP-rd-JSy"/>
+                <outlet property="lblDatePeriod" destination="q3u-iO-vzk" id="6NZ-aW-Q8p"/>
+                <outlet property="lblEventName" destination="jac-67-S7b" id="dMQ-GB-Hi2"/>
+            </connections>
+            <point key="canvasLocation" x="66.666666666666671" y="95.089285714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="btn_iPhone" width="357.5" height="50"/>
+        <namedColor name="customSubHeaderColor">
+            <color red="0.59600001573562622" green="0.59600001573562622" blue="0.59600001573562622" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
